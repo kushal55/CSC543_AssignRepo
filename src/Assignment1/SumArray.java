@@ -1,4 +1,4 @@
-package myproject3;
+package Assignment1;
 import java.util.*;
 
 public class SumArray {
