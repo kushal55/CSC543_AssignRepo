@@ -23,12 +23,10 @@ public class ArrayImpl {
             }
         }
  
-        // number of columns in compactMatrix (size) must be
-        // equal to number of non - zero elements in
-        // sparseMatrix
+       
         int compactMatrix[][] = new int[3][size];
  
-        // Making of new matrix
+        
         int k = 0;
         for (int i = 0; i < 4; i++)
         {

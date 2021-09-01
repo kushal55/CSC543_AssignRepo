@@ -13,8 +13,7 @@ public class LinkedlistImpl {
 Node *temp = *p;
 Node *r;
 
-// If link list is empty then
-// create first node and assign value.
+
 if (temp == NULL)
 {
 temp = new Node();
@@ -25,8 +24,7 @@ temp->next = NULL;
 *p = temp;
 }
 
-// If link list is already created
-// then append newly created node
+
 else
 {
 while (temp->next != NULL)  
@@ -41,8 +39,7 @@ temp->next = r;
 }
 }
 
-//Function prints contents of linked list
-//starting from start
+
 void printList(Node *start)
 {
 Node *ptr = start;
@@ -72,17 +69,17 @@ ptr = ptr->next;
 }
 }
 
-//Driver Code
+
 public static int main()
 {
 
-// 4x5 sparse matrix
+
 int sparseMatrix[][] = { { 0 , 0 , 3 , 0 , 4 },
                       { 0 , 0 , 5 , 7 , 0 },
                       { 0 , 0 , 0 , 0 , 0 },
                       { 0 , 2 , 6 , 0 , 0 } };
 
-// Creating head/first node of list as NULL
+
 Object first;
 Node *first = NULL;
 for(int i = 0; i < 4; i++)
@@ -90,8 +87,7 @@ for(int i = 0; i < 4; i++)
 for(int j = 0; j < 5; j++)
 {
     
-   // Pass only those values which
-   // are non - zero
+   
    if (sparseMatrix[i][j] != 0)
        create_new_node(&first, i, j,
                        sparseMatrix[i][j]);
