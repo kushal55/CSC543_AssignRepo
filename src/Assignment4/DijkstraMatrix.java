@@ -42,7 +42,7 @@ public class DijkstraMatrix {
 	            adjList.add(new ArrayList<>());
 	        }
 	 
-	        // add edges to the undirected graph
+	        
 	        for (Edge edge: edges) {
 	            adjList.get(edge.source).add(edge);
 	        }
